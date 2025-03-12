@@ -16,6 +16,8 @@ nav {
 nav .logo {
     color: white;
     font-size: 25px;
+    height : 431,25px;
+    width : 150px;
 }
 nav a {
     color: white;
@@ -115,4 +117,3 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
