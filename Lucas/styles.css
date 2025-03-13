@@ -1,0 +1,96 @@
+/* Style général */
+body {
+    font-family: Arial;
+    background-color: #b5d1eb;
+    color: #3b3b3b;
+}
+
+/* Barre de navigation */
+nav {
+    background: #1404aa;
+    padding: 15px; /* Ajoute un espace intérieur de 15px autour de la barre de navigation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    height: 431,25px;
+    width: 150px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Supprime le soulignement des liens */
+    margin-left: 20px; /* Ajoute une marge à gauche entre les liens */
+}
+/* Style de l'icône du panier */
+.cart-icon {
+    position: relative; /* Permet de positionner .cart-count par rapport à cette icône */
+    color: white;
+    font-size: 24px;
+}
+
+/* Style du cercle du nombre d'articles */
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #649acc;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+/* Bannière */
+.hero {
+    background: url('images/bannière.png') center/cover;
+    height: 800px;
+}
+/* Grille des produits */
+.products {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Crée 5 colonnes de largeur égale */
+    gap: 20px; /* Ajoute un espace entre les éléments de la grille */
+    padding: 0 20px; /* Ajoute un espace intérieur à gauche et à droite */
+}
+.product {
+    background: #b5d1eb;
+    position: relative; /* Permet de positionner les éléments enfants absolument */
+    height: 320px;
+}
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajuste l'image pour qu'elle ne soit pas déformée */
+    position: absolute;
+}
+.product .hover-img {
+    opacity: 0; /* Rend l'image de survol invisible par défaut */
+    transition: opacity 0.7s ease;
+}
+.product:hover .hover-img {
+    opacity: 1; /* Rend l'image de survol visible au survol */
+}
+.product-info {
+    position: absolute; /* Positionne les informations du produit absolument */
+    bottom: 0;
+    width: 100%;
+    background: rgba(228, 228, 228, 0.9); /* Ajoute un fond semi-transparent */
+    text-align: center;
+    padding: 10px;
+}
+.product-info a {
+    background: #655cb8;
+    color: white;
+    padding: 5px 10px; /* Ajoute un espace intérieur au bouton */
+    text-decoration: none;
+}
+/* Pied de page */
+footer {
+    background: #1404aa;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
