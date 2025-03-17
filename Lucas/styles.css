@@ -1,13 +1,13 @@
 
 body {
     font-family: Arial;
-    background-color: #b5d1eb;
+    background: linear-gradient(90deg, #1404aa, #649acc, #8d1ce9);
     color: #3b3b3b;
 }
 
 
 .barre-navigation {
-    background: #1404aa;
+    background: linear-gradient(90deg, #1404aa, #649acc, #8d1ce9);
     padding: 15px; /* Ajoute un espace intérieur de 15px autour de la barre */
     display: flex;
     justify-content: space-between;
@@ -105,7 +105,6 @@ body {
     gap: 20px; /* Ajoute un espace entre les éléments de la grille */
 }
 .article {
-    background: #b5d1eb;
     position: relative;
     height: 320px;
 }
@@ -183,7 +182,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #8d1ce9;
+    background: linear-gradient(90deg, #1404aa, #649acc, #8d1ce9);
     color: white;
     padding: 8px;
     text-decoration: none;
@@ -192,7 +191,7 @@ body {
 
 
 .pied-page {
-    background: #1404aa;
+    background: linear-gradient(90deg, #1404aa, #649acc, #8d1ce9);
     color: white;
     text-align: center;
     padding: 20px;
@@ -252,3 +251,4 @@ body {
     width: 125px;
     height: auto;
 }
+
